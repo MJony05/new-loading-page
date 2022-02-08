@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.content div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.load-1 {
+  background-color: #1164a6;
+  animation-name: totop;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+.load-2 {
+  background-color: #40a722;
+  animation-name: totopright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+.load-3 {
+  background-color: #9c398b;
+  animation-name: toright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+.load-4 {
+  background-color: #9cc119;
+  animation-name: tobottomright;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+.load-5 {
+  background-color: #12b5d8;
+  animation-name: tobottom;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+.load-6 {
+  background-color: #f1d613;
+  animation-name: tobottomleft;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+.load-7 {
+  background-color: #45b69a;
+  animation-name: toleft;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+.load-8 {
+  background-color: #e84b7e;
+  animation-name: totopleft;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.1, 0.175, 1);
+  animation-iteration-count: infinite;
+}
+@keyframes totop {
+  0%,
+  100% {
+    top: 0;
+    transform: scale(1);
+  }
+  50% {
+    top: -120px;
+    transform: scale(0.4);
+  }
+}
+@keyframes toright {
+  0%,
+  100% {
+    right: 0;
+    transform: scale(1);
+  }
+  50% {
+    right: -120px;
+    transform: scale(0.4);
+  }
+}
+@keyframes tobottom {
+  0%,
+  100% {
+    bottom: 0;
+    transform: scale(1);
+  }
+  50% {
+    bottom: -120px;
+    transform: scale(0.4);
+  }
+}
+@keyframes toleft {
+  0%,
+  100% {
+    left: 0;
+    transform: scale(1);
+  }
+  50% {
+    left: -120px;
+    transform: scale(0.4);
+  }
+}
+@keyframes totopright {
+  0%,
+  100% {
+    top: 0;
+    right: 0;
+    transform: scale(1);
+  }
+  50% {
+    top: -85.7px;
+    right: -85.7px;
+    transform: scale(0.4);
+  }
+}
+@keyframes tobottomright {
+  0%,
+  100% {
+    bottom: 0;
+    right: 0;
+    transform: scale(1);
+  }
+  50% {
+    bottom: -85.7px;
+    right: -85.7px;
+    transform: scale(0.4);
+  }
+}
+@keyframes tobottomleft {
+  0%,
+  100% {
+    bottom: 0;
+    left: 0;
+    transform: scale(1);
+  }
+  50% {
+    bottom: -85.7px;
+    left: -85.7px;
+    transform: scale(0.4);
+  }
+}
+@keyframes totopleft {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    transform: scale(1);
+  }
+  50% {
+    top: -85.7px;
+    left: -85.7px;
+    transform: scale(0.4);
+  }
+}
